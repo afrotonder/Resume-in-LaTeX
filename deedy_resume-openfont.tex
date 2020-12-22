@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Omar}{Rosado Ramírez}{ \urlstyle{same}\url{github.com/afrotonder } \\
+\href{mailto:o.rosado18@gmail.com}{o.rosado18@gmail.com} - 787.613.1379}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DESCRIPTION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Description}
+\descript{ Solution oriented computer scientist that values creativity and effective communication in the workplace. }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EDUCATION}
+\runsubsection{ 
+University of Puerto Rico, Río Piedras Campus, San Juan PR }
+\break
+\descript{ BS in Computer Science | August 2012 – May 2019}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{APS Health}
+\break
+\descript{ Business Intelligence Developer  |   August 2020 - Present    |  San Juan, PR} %\location{Developed }
+\begin{tightemize}
+            \item Responsible for redesigning and implementing new changes to inhouse reporting app
+          \item Fix data queries for inhouse reporting app
+          \item Implement git to company project workflow
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{TuChequera.com}
+\break
+\descript{ Full Stack Developer  |   July 2018 - Present    |      San Juan, PR} %\location{Developed }
+\begin{tightemize}\item Develop new features for TuChequera.com webapp focusing on user friendly designs and data automation. Also responsible for debuging and maintaining webapp. [JavaScript, HTML, CSS, C\#, .Net/MVC]
+                  \item Develop and maintain TuChequera Móvil app, assisting in update releases, build error fixes, and application QA. [Ionic, Angular, Capacitor, Javascript/TypeScript, Sass, Android, iOS]
+                  \item Maintain TuChequera Móvil API [.NET, C\#, JS]
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Center for Applied Tropical Ecology and Conservation (CATEC)}
+\break
+\descript{ Full Stack Developer  |   January 2016 - July 2018    |      San Juan, PR} %\location{Developed }
+\begin{tightemize}\item Maintain and develop CATEC's official                            website [WordPress] 
+                  \item Maintain CATEC's server and backups [CentOS Server, ShellScript]
+                  \item Websites developed:
+                    \begin{itemize}
+                        \item CATEC Website \textbf{[WordPress]}
+                        \item PCIP Online(Proyecto Corporativo de Indización de Periódicos) \textbf{[Php, JavaScript, Bootstrap, MySQL]}
+                        \item FireCollect: Metadata System  Collection \textbf{[Php, JavaScript, Bootstrap, MySQL]}
+                        \item sitem0n: Website Monitoring Tool \textbf{[Php, JavaScript, Bootstrap, MySQL]}
+                    \end{itemize}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Get(It)Virtual}
+\break
+\descript{ WordPress Developer    |    August 2016 – December 2017    |    San Juan, PR}
+\location{}
+\begin{tightemize}
+\item Help design assigned websites
+\item Overall development of client websites 
+\item Websites developed: \\ 
+\begin{itemize}
+    \item Materials Characterization Center Website [WordPress]
+    \item Mr.AsvabPR Website [WordPress]
+    \item El Corredor Del Yaguazo Website [WordPress]
+\end{itemize}
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Megaprobe Lab}
+% \descript{| Undergrad Research}
+% \location{Aug 2014 – May 2015 | San Juan, PR}
+% Worked with Prof. Humberto Ortiz-Zuazaga on a simple-to-use DNA sequencer in Python 2.7 called Copperhead. \\
+% \begin{tightemize}
+% \item Developed CopperHead, a simple genome sequence parser [Python 2.7]
+% \item Presented Copperhead Scientific Poster at 
+%       UPRRP Natural Science Faculty
+% \end{tightemize}
+
+% \location{Jan 2019 – May 2019 | San Juan, PR}
+% Contributed to an open-source genome squencing framework called Kevlar. 
+% \begin{tightemize}
+%     \item Created a new, well structured README for the project[Markdown]
+%     \item{Created a UNIX man page for the project [ShellScript, Python]}
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills, Hobbies and interests
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Hobbies}
+% \begin{itemize}
+%     \item Created a new, well structured README for the project[Markdown]
+%     \item{Created a UNIX man page for the project [ShellScript, Python]}
+% \end{itemize}
+
+\end{document}
