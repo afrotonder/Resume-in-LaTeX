@@ -45,7 +45,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{deedy-resume-openfont}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{datetime}
+\usepackage{fancyhdr}
 
+
+\newdateformat{monthyeardate}{%
+  \THEYEAR}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{Afrotonder @ /year}
+
+\usepackage{datetime}
 
 \begin{document}
 
@@ -61,9 +74,18 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Omar}{Rosado Ramírez}{ \urlstyle{same}\url{github.com/afrotonder } \\
-\href{mailto:o.rosado18@gmail.com}{o.rosado18@gmail.com} - 787.613.1379}
+\namesection{Omar}{Rosado Ramírez}
+{
+      \color{Maroon} \urlstyle{same}\url{github.com/afrotonder}    
+- \color{OliveGreen} \href{mailto:o.rosado18@gmail.com}{o.rosado18@gmail.com} 
+- \color{Fuchsia} 787.613.1379
+- \color{Tan} TEST
 
+ }
+
+
+
+% | \url{https://afrotonder.github.io/afrotonder}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     DESCRIPTION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,11 +109,15 @@ University of Puerto Rico, Río Piedras Campus, San Juan PR }
 
 \runsubsection{APS Health}
 \break
-\descript{ Business Intelligence Developer  |   August 2020 - Present    |  San Juan, PR} %\location{Developed }
+\descript{ Business Intelligence Analyst  |   August 2020 - Present    |  San Juan, PR} %\location{Developed }
 \begin{tightemize}
-            \item Responsible for redesigning and implementing new changes to inhouse reporting app
-          \item Fix data queries for inhouse reporting app
-          \item Implement git to company project workflow
+            \item Responsible for redesigning and implementing new changes to inhouse reporting app [PHP, JS, CSS]
+            \item Prepare reports on-demand in PowerBi or with jQuery Datatables for inhouse reporting app. [PowerBi, JQuery, PHP, TSQL]
+            \item Optimize inhouse reporting app data queries to be compliant with modern standards. 
+            \item Implement git to company project workflow, leading to an eventual overall adoption.
+            \item Aid in the design and creation of a new inhouse Complaints webapp. [Adobe XD, Django Framework, Python]
+            
+         
 \end{tightemize}
 
 \sectionsep
@@ -99,9 +125,9 @@ University of Puerto Rico, Río Piedras Campus, San Juan PR }
 \runsubsection{TuChequera.com}
 \break
 \descript{ Full Stack Developer  |   July 2018 - Present    |      San Juan, PR} %\location{Developed }
-\begin{tightemize}\item Develop new features for TuChequera.com webapp focusing on user friendly designs and data automation. Also responsible for debuging and maintaining webapp. [JavaScript, HTML, CSS, C\#, .Net/MVC]
-                  \item Develop and maintain TuChequera Móvil app, assisting in update releases, build error fixes, and application QA. [Ionic, Angular, Capacitor, Javascript/TypeScript, Sass, Android, iOS]
-                  \item Maintain TuChequera Móvil API [.NET, C\#, JS]
+\begin{tightemize}\item Develop and maintain UI for TuChequera.com webapp focusing on user friendly designs. Also responsible for maintaining website's SEO in check. [JavaScript, HTML, CSS, C\#, .Net/MVC]
+                  \item Develop and maintain TuChequera Móvil app. General maintenance includes update releases, build error fixes, and application QA. [Ionic, Angular, Capacitor, TypeScript, SCSS, Android, iOS]
+                  \item Maintain TuChequera Móvil API by implementing new data features. [.NET, C\#, JS]
 \end{tightemize}
 
 \sectionsep
@@ -124,7 +150,7 @@ University of Puerto Rico, Río Piedras Campus, San Juan PR }
 \runsubsection{Get(It)Virtual}
 \break
 \descript{ WordPress Developer    |    August 2016 – December 2017    |    San Juan, PR}
-\location{}
+\location{San Juan, PR}
 \begin{tightemize}
 \item Help design assigned websites
 \item Overall development of client websites 
@@ -169,5 +195,9 @@ University of Puerto Rico, Río Piedras Campus, San Juan PR }
 %     \item Created a new, well structured README for the project[Markdown]
 %     \item{Created a UNIX man page for the project [ShellScript, Python]}
 % \end{itemize}
-
+% \usepackage{fancyhdr}
+% \foot{dsdsd}
+\begin{center}
+Afrotonder @ {\the\year{}}
+\end{center}
 \end{document}
